@@ -1,6 +1,6 @@
 import Header from './Components/Header';
 import Footer from './Components/Footer';
-import Head from './head'
+import  head from './head'
 
 
 export default function RootLayout({
@@ -10,7 +10,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">      
-      <Head />
+      <head />
       <body>
 
         <Header />

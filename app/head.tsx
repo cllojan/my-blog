@@ -1,10 +1,8 @@
 const head = () => {
     return (
-        <>
-            <title></title>
-            <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-            
-        </>
+        <head>
+            <title>Hola </title>                                
+        </head>        
     )
 }
 

@@ -1,6 +1,6 @@
 import Header from './Components/Header';
 import Footer from './Components/Footer';
-import  head from './head'
+import Head from './head';
 
 
 export default function RootLayout({
@@ -10,13 +10,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">      
-      <head />
+      <Head />
       <body>
-
-        <Header />
-        
-          {children}
-        
+        <Header />        
+          {children}        
         <Footer />        
       </body>
     </html>

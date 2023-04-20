@@ -1,14 +1,14 @@
+import Link from "next/link";
+
 const Header = () => {
-    return (
-        <header>
-            <nav>
-                <a href="http://" target="_blank" rel="noopener noreferrer">Inicio</a>
-                <a href="http://" target="_blank" rel="noopener noreferrer">Dos</a>
-                <a href="http://" target="_blank" rel="noopener noreferrer">HA</a>
-                <a href="http://" target="_blank" rel="noopener noreferrer">Hoasa</a>
-            </nav>
-        </header>
-    )
-}
+  return (
+    <header className='text-center bg-slate-800 p-8'>
+      <Link href='/'>
+        <h1 className='text-3xl text-white'>Blog</h1>
+      </Link>
+      <p className='text-slate-300'>Hola :v</p>
+    </header>
+  );
+};
 
 export default Header;

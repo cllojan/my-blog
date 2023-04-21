@@ -12,7 +12,7 @@ const PostPreview = (props: PostMetaData) => {
 
         <div className='relative flex h-full transform items-end border-2 border-black bg-white transition-transform group-hover:-translate-x-2 group-hover:-translate-y-2'>
           <div className='p-4 !pt-0 transition-opacity group-hover:absolute group-hover:opacity-0 sm:p-6 lg:p-8'>
-            <span className='text-slate-300 font-serif font-semibold italic'>
+            <span className='text-gray-500 font-mono font-semibold italic'>
               {props.date}
             </span>
             <h2 className='mt-4 text-xl font-medium sm:text-2xl'>

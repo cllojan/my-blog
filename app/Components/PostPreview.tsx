@@ -15,7 +15,7 @@ const PostPreview = (props: PostMetaData) => {
             <span className='text-gray-500 font-mono font-semibold italic'>
               {props.date}
             </span>
-            <h2 className='mt-4 text-xl font-medium sm:text-2xl'>
+            <h2 className='mt-4 text-xl font-sans font-medium sm:text-2xl'>
               {props.title}
             </h2>
           </div>

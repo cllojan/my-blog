@@ -3,30 +3,34 @@ import { PostMetaData } from "../../utils/PostMetaData";
 
 const PostPreview = (props: PostMetaData) => {
   return (
-    <div>
-      <article className='rounded-xl bg-gradient-to-r from-green-300 via-blue-500 to-purple-600 p-0.5 shadow-xl transition hover:shadow-sm'>
-        <div className='rounded-[10px] bg-white p-4 !pt-20 sm:p-6'>
-          <time dateTime='2022-10-10' className='block text-xs text-gray-500'>
-            {props.date}
-          </time>
+    <div className=''>
+      <Link
+        href={`posts/${props.slug}`}
+        className='group relative block h-24 sm:h-52 lg:h-52'
+      >
+        <span className='absolute inset-0 border-2 border-dashed border-black'></span>
 
-          <Link href={`posts/${props.slug}`}>
-            <h3 className='mt-0.5 text-lg font-medium text-gray-900'>
+        <div className='relative flex h-full transform items-end border-2 border-black bg-white transition-transform group-hover:-translate-x-2 group-hover:-translate-y-2'>
+          <div className='p-4 !pt-0 transition-opacity group-hover:absolute group-hover:opacity-0 sm:p-6 lg:p-8'>
+            <span className='text-slate-300 font-serif font-semibold italic'>
+              {props.date}
+            </span>
+            <h2 className='mt-4 text-xl font-medium sm:text-2xl'>
+              {props.title}
+            </h2>
+          </div>
+
+          <div className='absolute p-4 opacity-0 transition-opacity group-hover:relative group-hover:opacity-100 sm:p-6 lg:p-8'>
+            <h3 className='mt-4 text-xl font-medium sm:text-2xl'>
               {props.title}
             </h3>
-          </Link>
 
-          <div className='mt-4 flex flex-wrap gap-1'>
-            <span className='whitespace-nowrap rounded-full bg-purple-100 px-2.5 py-0.5 text-xs text-purple-600'>
-              Snippet
-            </span>
+            <p className='mt-4 text-sm sm:text-base'>{props.subtitle}</p>
 
-            <span className='whitespace-nowrap rounded-full bg-purple-100 px-2.5 py-0.5 text-xs text-purple-600'>
-              JavaScript
-            </span>
+            <p className='mt-8 font-bold'>Leer</p>
           </div>
         </div>
-      </article>
+      </Link>
     </div>
   );
 };

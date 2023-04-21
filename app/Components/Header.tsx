@@ -2,11 +2,17 @@ import Link from "next/link";
 
 const Header = () => {
   return (
-    <header className='text-center bg-slate-800 p-8'>
+    <header className='grid gap-7 justify-center text-center p-8'>
       <Link href='/'>
-        <h1 className='text-3xl text-white'>Blog</h1>
+        <h1 className='text-4xl text-slate-950'>Cllojan Blog</h1>
       </Link>
-      <p className='text-slate-300'>Hola :v</p>
+      <div className=''>
+        <nav className='flex flex-row items-center justify-center gap-4'>
+          <Link href='/'>Inicio</Link>
+          <Link href='/'>Acerca de Mi</Link>
+          <Link href='https://github.com'>Github</Link>
+        </nav>
+      </div>
     </header>
   );
 };
